@@ -1,6 +1,6 @@
 # Data Structure and Algorithm
 
-`All about data structure and algorithm`
+    All about data structure and algorithm
 
 ## Table of contents
 
