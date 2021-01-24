@@ -27,8 +27,8 @@ trees, graph, quick sort, merge sort တို့လို data structure နဲ
 
 ## Example problems
 
--   Factorial
--   Fibonacci
+-   [Factorial](https://github.com/htutwaiphyoe/mastering-data-structure-and-algorithms/blob/master/recursion/factorial.js)
+-   [Fibonacci](https://github.com/htutwaiphyoe/mastering-data-structure-and-algorithms/blob/master/recursion/fibonacci.js)
 
 ## Recursion vs Iteration
 
