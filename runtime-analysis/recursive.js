@@ -1,4 +1,4 @@
-// Calcuation time complexity with recursive algorithm
+// Calcuation time complexity with recursive algorithm (linear search)
 
 const numbers = [4000, 100, 401, 1001, 42, 42, 424, 55, 2000, 3000];
 
@@ -20,14 +20,14 @@ console.log(findBiggestNumber(numbers, numbers.length - 1));
 /* 
     Back substitution:
     T(n) = O(1) + O(1) + O(1) + O(1) + T(n - 1)
-         = O(1) + T(n - 1) ---------- first call
+         = O(1) + T(n - 1) ---------- first recursive call
     
     T(-1) = O(1) ----------------- base case
 
     T(n - 1) = O(1) + T((n - 1) - 1)
-             = O(1) + T(n - 2) ----- second call
+             = O(1) + T(n - 2) ----- second recursive call
     
-    T(n - 2) = O(1) + T(n - 3) --- third call
+    T(n - 2) = O(1) + T(n - 3) --- third recursive call
     .....
 
     T(n) = 1 + T(n - 1)
