@@ -34,9 +34,20 @@ console.table(arr3);
 // Traversing an array
 
 function traverseArray(arr) {
-    for(let i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
+    for(let i = 0; i < arr.length; i++) { // O(n)
+        console.log(arr[i]); // O(1)
     }
 }
 
-traverseArray(arr3)
+traverseArray(arr3);
+
+// Accessing value of an array
+
+function accessValue(arr, location){
+    if(location >= arr.length){ // O(1)
+        return "Cell number is greater than array length"; // O(1)
+    }
+    return arr[location]; // O(1)
+}
+
+console.log(accessValue(arr, 3));
