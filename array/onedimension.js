@@ -29,4 +29,14 @@ function insert(arr, value, location) {
 }
 
 insert(arr3, 1, 1);
-console.table(arr3)
+console.table(arr3);
+
+// Traversing an array
+
+function traverseArray(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+
+traverseArray(arr3)
