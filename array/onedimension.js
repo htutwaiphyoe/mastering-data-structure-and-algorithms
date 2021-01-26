@@ -51,3 +51,16 @@ function accessValue(arr, location){
 }
 
 console.log(accessValue(arr, 3));
+
+// Searching value of an array
+
+function searchValue(arr,val){
+    for(let i=0; i<arr.length; i++){ // O(n)
+        if(arr[i] === val){ // O(1)
+            return i; // O(1)
+        }
+    }
+    return `The value ${val} is not in the array`; // O(1)
+}
+
+console.log(searchValue(arr, 1));
