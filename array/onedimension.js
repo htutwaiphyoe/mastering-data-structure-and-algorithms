@@ -1,3 +1,4 @@
+// Creating an array
 // declaration: creating reference variable
 let arr; // O(1)
 
@@ -16,3 +17,16 @@ let arr2 = [0, 1, 2, 3, 4]; // O(1)
 
 console.table(arr);
 console.table(arr2);
+
+// Insering a value in an array
+let arr3 = new Array(3);
+
+function insert(arr, value, location) {
+    if (arr3[location]) { // O(1)
+        return "Location is already occupied!"; // O(1)
+    }
+    arr[location] = value; // O(1)
+}
+
+insert(arr3, 1, 1);
+console.table(arr3)
