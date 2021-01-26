@@ -64,3 +64,12 @@ function searchValue(arr,val){
 }
 
 console.log(searchValue(arr, 1));
+
+// Deleting value of an array
+function deleteValue(arr, loc){
+    if(arr[loc]){ // O(1)
+        arr[loc] = undefined; // O(1)
+    }  
+    return arr; // O(1)
+}
+console.log(deleteValue(arr, 4));
