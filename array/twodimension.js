@@ -47,11 +47,22 @@ console.table(arr3);
 // traversion
 
 function traverse(arr){
-    for(let i=0; i<arr.length; i++){
-        for(let j=0; j<arr[i].length; j++){
-            console.log(arr[i][j]);
+    for(let i=0; i<arr.length; i++){ // O(n) 
+        for(let j=0; j<arr[i].length; j++){ // O(n)
+            console.log(arr[i][j]); // O(1)
         }
     }
 }
 
 traverse(arr2);
+
+// accession
+
+function access(arr, row, col){
+    if(arr[row][col]){ // O(1)
+        return arr[row][col]; // O(1)
+    }
+    return "No value"; // O(1)
+}
+
+console.log(access(arr3,0,0))
