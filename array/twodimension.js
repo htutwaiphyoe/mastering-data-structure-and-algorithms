@@ -43,3 +43,15 @@ function insert(arr, val, row, col){
 
 insert(arr3,0,1,2);
 console.table(arr3);
+
+// traversion
+
+function traverse(arr){
+    for(let i=0; i<arr.length; i++){
+        for(let j=0; j<arr[i].length; j++){
+            console.log(arr[i][j]);
+        }
+    }
+}
+
+traverse(arr2);
