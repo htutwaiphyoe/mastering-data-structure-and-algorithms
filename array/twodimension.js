@@ -81,3 +81,14 @@ function search(arr,val){
 }
 
 console.log(search(arr2, 0))
+
+// deletion
+
+function deleteValue(arr, row, col){
+    if(arr[row][col]){ // O(1)
+        arr[row][col] = undefined // O(1)
+    }
+    return arr // O(1)  
+}
+
+console.log(deleteValue(arr2, 0, 1))
