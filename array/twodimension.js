@@ -47,8 +47,8 @@ console.table(arr3);
 // traversion
 
 function traverse(arr){
-    for(let i=0; i<arr.length; i++){ // O(n) 
-        for(let j=0; j<arr[i].length; j++){ // O(n)
+    for(let i=0; i<arr.length; i++){ // O(n)             ---- O(n^2)
+        for(let j=0; j<arr[i].length; j++){ // O(n)         -
             console.log(arr[i][j]); // O(1)
         }
     }
@@ -66,3 +66,18 @@ function access(arr, row, col){
 }
 
 console.log(access(arr3,0,0))
+
+// searching
+
+function search(arr,val){
+    for(let i=0; i<arr.length; i++){ // O(n)            ----- O(n^2)
+        for(let j=0; j< arr[i].length; j++){ // O(n)    --
+            if(arr[i][j] === val){ // O(1)
+                return `(${i},${j})` // O(1)
+            }
+        }
+    }
+    return "No value found" // O(1)
+}
+
+console.log(search(arr2, 0))
