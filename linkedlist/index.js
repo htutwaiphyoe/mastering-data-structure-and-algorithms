@@ -8,3 +8,5 @@ singleLinkedList.append(40);
 singleLinkedList.insert(30, 2);
 
 console.log(singleLinkedList.head);
+
+singleLinkedList.printList();

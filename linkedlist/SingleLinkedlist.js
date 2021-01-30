@@ -62,9 +62,20 @@ class SingleLinkedlist {
 
         node.next = cur;
         prev.next = node;
-        
+
         this.size++;
         return this;
+    }
+
+    printList() {
+        // create temporary node
+        let node = this.head;
+
+        // loop until node exists
+        while (node) {
+            console.log(node.value);
+            node = node.next;
+        }
     }
 }
 
