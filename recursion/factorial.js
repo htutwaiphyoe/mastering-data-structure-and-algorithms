@@ -1,6 +1,6 @@
 function factorial(n) {
     if (n < 0) return "Factorial can't be found on negative integers";
-    if (n === 0) return 1;
+    if (n === 0 || n === 1) return 1;
     return n * factorial(n - 1);
 }
 
