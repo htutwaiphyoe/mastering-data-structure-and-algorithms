@@ -92,6 +92,23 @@ class SingleLinkedlist {
         }
         return -1;
     }
+    removeFirst() {
+        if (this.checkList()) {
+            this.head = this.head.next;
+            if (this.size === 1) {
+                this.tail = null;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    checkList() {
+        if (!this.head) {
+            return false;
+        }
+        return true;
+    }
 }
 
 module.exports = SingleLinkedlist;

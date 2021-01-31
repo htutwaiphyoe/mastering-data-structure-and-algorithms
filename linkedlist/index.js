@@ -12,3 +12,7 @@ console.log(singleLinkedList.head);
 singleLinkedList.printList();
 
 console.log(singleLinkedList.search(60));
+
+console.log(singleLinkedList.removeFirst());
+
+console.log(singleLinkedList.head);
