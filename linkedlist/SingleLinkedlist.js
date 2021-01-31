@@ -133,7 +133,25 @@ class SingleLinkedlist {
     }
     remove(index) {
         if (index === 0) {
+            return this.removeFirst();
+        } else if (index === this.size - 1) {
+            return this.removeEnd();
+        } else if (index >= this.size || !index) {
+            return false;
         }
+        let cur, prev;
+        let i = 0;
+        cur = this.head;
+
+        while (i < index) {
+            i++;
+            prev = cur;
+            cur = cur.next;
+        }
+
+        prev.next = cur.next;
+        this.size--;
+        return true;
     }
 }
 
