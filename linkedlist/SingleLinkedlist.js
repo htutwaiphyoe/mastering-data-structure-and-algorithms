@@ -98,16 +98,42 @@ class SingleLinkedlist {
             if (this.size === 1) {
                 this.tail = null;
             }
+            this.size--;
             return true;
         }
         return false;
     }
+    removeEnd() {
+        if (this.checkList()) {
+            if (this.size === 1) {
+                this.tail = this.head = null;
+                return true;
+            }
+            let cur, prev;
+            cur = this.head;
+            let i = 1;
+            while (i < this.size) {
+                i++;
+                prev = cur;
+                cur = cur.next;
+            }
+            prev.next = null;
+            this.tail = prev;
 
+            this.size--;
+            return true;
+        }
+        return false;
+    }
     checkList() {
         if (!this.head) {
             return false;
         }
         return true;
+    }
+    remove(index) {
+        if (index === 0) {
+        }
     }
 }
 

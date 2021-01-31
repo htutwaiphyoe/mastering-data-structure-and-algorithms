@@ -16,3 +16,6 @@ console.log(singleLinkedList.search(60));
 console.log(singleLinkedList.removeFirst());
 
 console.log(singleLinkedList.head);
+
+console.log(singleLinkedList.removeEnd());
+console.log(singleLinkedList.head);
