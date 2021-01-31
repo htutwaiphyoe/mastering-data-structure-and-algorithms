@@ -10,3 +10,5 @@ singleLinkedList.insert(30, 2);
 console.log(singleLinkedList.head);
 
 singleLinkedList.printList();
+
+console.log(singleLinkedList.search(60));

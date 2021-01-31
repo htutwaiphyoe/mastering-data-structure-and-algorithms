@@ -77,6 +77,21 @@ class SingleLinkedlist {
             node = node.next;
         }
     }
+
+    search(val) {
+        // create temporary node
+        let node = this.head;
+
+        // loop the list
+        while (node) {
+            // compare values
+            if (node.value === val) {
+                return node.value;
+            }
+            node = node.next;
+        }
+        return -1;
+    }
 }
 
 module.exports = SingleLinkedlist;
