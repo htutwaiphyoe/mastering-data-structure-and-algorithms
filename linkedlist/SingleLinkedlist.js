@@ -153,6 +153,12 @@ class SingleLinkedlist {
         this.size--;
         return true;
     }
+    emptyList() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+        return true;
+    }
 }
 
 module.exports = SingleLinkedlist;

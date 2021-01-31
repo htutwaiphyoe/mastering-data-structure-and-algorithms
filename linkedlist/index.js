@@ -23,3 +23,6 @@ console.log(singleLinkedList.head);
 
 console.log(singleLinkedList.remove(1));
 console.log(singleLinkedList.head);
+
+console.log(singleLinkedList.emptyList());
+console.log(singleLinkedList);
