@@ -2,14 +2,10 @@ const CircleSingleLinkedList = require("./CircleSingleLinkedList");
 
 const csll = new CircleSingleLinkedList();
 
-csll.prepend(200);
-csll.prepend(100);
-
+csll.append(200);
+csll.insert(100, 0);
+csll.insert(300, 2);
+csll.insert(400, 1);
+csll.prepend(50);
+csll.insert(500, 2);
 console.log(csll.head);
-
-csll.append(300);
-csll.append(400);
-
-console.log(csll.head);
-
-

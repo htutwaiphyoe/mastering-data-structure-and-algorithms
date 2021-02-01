@@ -42,6 +42,28 @@ class CircleSingleLinkedList {
         this.size++;
         return this;
     }
+    insert(value, index) {
+        if (index > this.size || index < 0 || index === undefined) {
+            return this;
+        } else if (index === 0 || this.size === 0) {
+            return this.prepend(value);
+        } else if (index === this.size) {
+            return this.append(value);
+        }
+        const node = new Node(value);
+        let cur, prev;
+        cur = this.head;
+        let i = 0;
+        while (i < index) {
+            i++;
+            prev = cur;
+            cur = cur.next;
+        }
+        node.next = prev.next;
+        prev.next = node;
+        this.size++;
+        return this;
+    }
 }
 
 module.exports = CircleSingleLinkedList;

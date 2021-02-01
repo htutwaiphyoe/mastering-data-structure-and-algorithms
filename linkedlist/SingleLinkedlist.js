@@ -38,7 +38,7 @@ class SingleLinkedlist {
     }
     insert(value, index) {
         // check index is valid
-        if (index < 0 || index > this.size) {
+        if (index < 0 || index > this.size || index === undefined) {
             return this;
         }
 
