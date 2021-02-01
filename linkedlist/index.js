@@ -8,4 +8,5 @@ csll.insert(300, 2);
 csll.insert(400, 1);
 csll.prepend(50);
 csll.insert(500, 2);
-console.log(csll.head);
+
+csll.printList();

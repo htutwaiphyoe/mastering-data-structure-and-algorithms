@@ -64,6 +64,16 @@ class CircleSingleLinkedList {
         this.size++;
         return this;
     }
+    printList() {
+        if (this.size === 0) return null;
+        let node = this.head;
+        let i = 0;
+        while (i < this.size) {
+            i++;
+            console.log(node.value);
+            node = node.next;
+        }
+    }
 }
 
 module.exports = CircleSingleLinkedList;
