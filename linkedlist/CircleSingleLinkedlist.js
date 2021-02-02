@@ -74,6 +74,16 @@ class CircleSingleLinkedList {
             node = node.next;
         }
     }
+    search(val) {
+        if (this.size === 0) return false;
+        let node = this.head;
+        for (let i = 0; i < this.size; i++) {
+            if (val === node.value) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 module.exports = CircleSingleLinkedList;

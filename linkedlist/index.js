@@ -10,3 +10,6 @@ csll.prepend(50);
 csll.insert(500, 2);
 
 csll.printList();
+
+console.log(csll.search(60));
+console.log(csll.search(50));
